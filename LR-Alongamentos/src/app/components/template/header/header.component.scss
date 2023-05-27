@@ -1,12 +1,13 @@
 .header{
   display: flex;
   align-items: center;
-  background-image: url("../../../../assets/img/");
+  background-color: #daa89f;
 }
 
 .header a {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   text-decoration: none;
 }
 
@@ -14,7 +15,7 @@
   max-height: 32px;
 }
 
-.header .title-group {
+.header .title-group a {
   padding-left: 10px;
   display: flex;
   justify-content: flex-end;
