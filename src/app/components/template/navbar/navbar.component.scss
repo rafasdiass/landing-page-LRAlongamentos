@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .scrollable-menu {
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-right: 16px;
+
+        button {
+          color: #000;
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+
+  &.mobile-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .scrollable-menu {
+      ul {
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+          margin-bottom: 8px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &.menu-button {
+    margin-left: auto;
+  }
+}
